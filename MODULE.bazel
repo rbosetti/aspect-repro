@@ -1,0 +1,7 @@
+module(
+    name = "aspect-repro",
+)
+
+# https://github.com/bazelbuild/rules_go/issues/3442#issuecomment-1518145947
+bazel_dep(name = "platforms", version = "0.0.5")
+bazel_dep(name = "aspect_bazel_lib", version = "1.32.1")
